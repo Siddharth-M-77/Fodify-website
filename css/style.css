@@ -1,0 +1,635 @@
+/* General Css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Variables */
+:root {
+    --primary-color: #A82C48;
+    --secondry-color: #43121d;
+    --third-color: #f98169;
+    --white-color: #fff;
+    --text-color: #555;
+    --text-gray: #999;
+    --black-color: #000;
+}
+
+.main-btn {
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: var(--primary-color);
+    border: 0.1875rem solid var(--primary-color);
+    color: var(--white-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+    animation: come 1s ease;
+}
+
+.white-btn {
+    padding: 0.625rem 1.875rem;
+    line-height: 25px;
+    background-color: var(--white-color);
+    border: 0.1875rem solid var(--white-color);
+    color: var(--text-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+    animation: come 1s ease;
+}
+
+.main-btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.white-btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+
+
+/* Custom Css */
+
+/* Header section */
+.my-nav {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-out;
+    
+}
+
+.my-nav .nav-item {
+    padding: 0 0.625rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus {
+    border: unset;
+    outline: unset;
+    box-shadow: none;
+}
+.nav-link {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.075rem;
+    letter-spacing: 1px;
+}
+.navbar-brand {
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.navbar-brand:hover {
+    color: var(--primary-color);
+}
+
+
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.my-nav .main-btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: 3px solid var(--primary-color);
+    padding: 0.2rem 1.25rem;
+    margin-left: 1rem;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+.my-nav .main-btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.fa-stream  {
+ color: var(--primary-color);
+}
+
+
+/* Navbar scroll fixed */
+.my-nav.scroll-on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white-color);
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.09);
+    transition: all .15s ease-in-out 0s;
+}
+
+/* Banner section */
+.my-banner {
+    width: 100%;
+    background-image: url(../images/bg/bg-4.jpg);
+    background-position:  80% top;
+    background-size: cover;
+    padding:15rem 0 12rem;
+}
+.title {
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+    color: var(--secondry-color);
+    animation: come 1s ease;
+}
+#home p {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    animation: come 1s ease;
+}
+
+/* Count section */
+.big-wrapper {
+    background-color: var(--primary-color);
+    padding:  2.5rem 0 1.5rem ;
+}
+.big-wrapper h2, span, p {
+    color: var(--white-color);
+}
+.big-wrapper p {
+    font-weight: 500;
+    font-size: 1.25rem;
+    letter-spacing: 1.2px;
+}
+
+/* About section */
+.about-wrapper {
+    background: var(--white-color);
+    padding: 8.25rem 0 2rem;
+}
+
+.about-wrapper .card,
+.about-wrapper .card img {
+    border-radius: 0.625rem;
+}
+
+.about-wrapper .side-text {
+    padding-left:2rem;
+}
+.about-wrapper h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.about-wrapper p {
+    color: var(--text-gray);
+    margin-top: 1rem;
+}
+
+.second-part {
+    padding-top: 2rem;
+}
+.list {
+    list-style: none;
+    padding-left: 0;
+}
+.list li {
+    padding-bottom: 0.5rem;
+}
+.list .fa-check {
+    color: var(--primary-color);
+    margin-right: 1rem;
+}
+
+
+/* Explore food section */
+.explore-section {
+    padding: 0 0 6rem;
+}
+.explore-section h2 {
+    font-size: 2.5rem ;
+    color: var(--primary-color);
+    font-weight: 600;
+    padding-bottom: 3rem;
+}
+
+.explore-section .card {
+    border: none;
+    background-color: transparent;
+    border-radius: 10px;
+}
+.explore-section .card img {
+    border-radius: 10px;
+    object-fit: cover;
+}
+.explore-section h4 {
+    font-weight: 600;
+}
+.explore-section p {
+    color: var(--text-color);
+    font-size: 1.125rem;
+}
+.explore-section span {
+    display: block;
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--text-gray);
+}
+.explore-section del {
+    color: var(--text-gray);
+}
+
+
+/* testimonial section */
+
+.testimonial-section {
+    padding: 6rem 0;
+    background-color: #f6f6f6;
+}
+
+.testimonial-section h2 {
+    font-size: 2.5rem ;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.test-contain {
+    padding-top: 3rem;
+}
+
+.inner-test {
+    padding: 2rem;
+    margin: 0 1rem;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+}
+
+.inner-test:hover {
+    box-shadow: 6px 6px 8px 0px rgba(99, 99, 99, 0.2);
+}
+
+.inner-test i {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.inner-test p {
+    color: var(--dark-color);
+
+}
+
+.inner-test .review-by {
+    display: flex;
+    padding: 1rem 0;
+}
+
+.img-contain img {
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author {
+    padding-left: 1.5rem;
+    padding-top: 0.4rem;
+}
+
+.author h5 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 1.5rem;
+    background-color: #fff;
+    line-height: 3;
+    color: var(--dark-color);
+    font-weight: 600;
+    border-radius: 50%;
+}
+
+.slick-dots {
+    bottom: -50px;
+}
+
+/* FAQ section */
+.faq-section {
+    padding: 6rem 0 3rem;
+}
+.faq-section h2 {
+    font-size: 2.5rem ;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.faq-section p {
+    color: var(--text-color);
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+    padding-top: 1rem;
+}
+.faq-section h4 {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+.faq-section h4 span {
+    color:var(--primary-color);
+    font-size: 1.5rem;
+    margin-right:0.3125rem;
+}
+
+/* Book section */
+.book-section {
+    width:100%;
+    background:url('../images/bg/bg-3.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:0 5rem;
+    padding:4.375rem 0
+}
+.book-section h2 {
+    color: var(--white-color);
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+/* Subscribe section */
+.subscribe-section {
+    padding: 6rem 0;
+}
+.subscribe-section h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.submit {
+    width:55%;
+    margin:0 auto;
+}
+
+.submit .form-control {
+    height:3.225rem;
+    padding:0 1.25rem;
+    font-size: 0.875rem;
+    width:100%;
+    border:none;
+    border-radius: 0;
+    background:transparent;
+    border:0.1875rem solid var(--text-gray);
+    color:var(--black-color);
+    font-weight: 700;
+}
+
+.submit .form-control:hover,
+.submit .form-control:focus {
+    outline:none;
+    box-shadow: none;
+    border-color:var(--primary-color);
+}
+
+/* Footer section */
+.footer-section {
+     background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);;
+    padding: 3rem 0;
+}
+
+.footer-section a i {
+    font-size: 1.75rem;
+    color:#000;
+    padding:0 1rem;
+    transition: 0.5s;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+.footer-social a :hover {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+.footer-section .copy-right {
+    font-size: 1.25rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+.footer-section .copy-right a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+/* Animation section */
+@keyframes come {
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Query section */
+@media only screen and (max-width : 1199px) {
+    .title {
+        font-size: 3.7rem;
+        width: 100%;
+    }
+    #home p {
+        font-size: 1.25rem;
+        width: 100%;
+    }
+    .about-wrapper h2 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .about-wrapper p {
+        color: var(--text-gray);
+        margin-top: 1rem;
+    }
+    .story-section .story-title {
+        padding-top: 3rem;
+    }
+    .story-section .story-title h2 {
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width : 992px) {
+    .my-nav {
+        background-color: #fff;
+    }
+    .my-nav .nav-item {
+        padding: 0;
+    }
+    .my-nav .main-btn {
+        margin-left: 0;
+    }
+    .my-banner {
+        padding:7.5rem 0 ;
+    }
+    .title {
+        font-size: 3.25rem;
+        margin-bottom: 1rem;
+    }
+    .about-wrapper {
+        padding-bottom: 4rem;
+    }
+    .about-wrapper .side-text {
+        padding-left: 13px;
+        padding-top: 2rem;
+    }
+    .about-wrapper .second-part .text-sec {
+        order: 1;
+    }
+    .explore-section {
+        padding-bottom: 3rem;
+    }
+    .story-title h2 {
+        font-size: 2.25rem;    
+    }
+    .faq-section h2 {
+        font-size: 2.25rem ;
+    }
+    .box {
+        gap: 2.5rem;
+    }
+    .sub-box {
+        flex-basis: 100%;
+    }
+    .book-section h2 {
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width : 768px) {
+    
+    .my-banner {
+        padding: 9.85rem 0 ;
+    }
+    .title {
+        font-size: 3rem;
+    }
+    #home p {
+        font-size: 1.125rem;
+    }
+    #home button {
+        display: block;
+    }
+    #home .white-btn {
+        font-size: 1.025rem;
+    }
+    #count .row .col-md-3 {
+       margin: 1.5rem 0;
+    }
+    .story-section .story-title {
+        padding-top: 3rem;
+    }
+    .story-section .story-title h2 {
+        font-size: 1.75rem;
+    }
+    .story-title p {
+        font-size: 1rem;   
+    }
+    .explore-section .story-title h2 {
+        font-size: 2rem;
+    }
+    .faq-section h2 {
+        font-size: 2rem;
+    }
+    .subscribe-section h2 {
+        font-size: 2rem;
+    }
+    .submit {
+        width:75%;   
+    }
+    .form-control{
+        margin-bottom: 0.5rem;
+    }
+    .submit .main-btn {
+        width:100%;
+    }
+    .text-light {
+        font-size: 1.125rem;
+    }
+}
+@media only screen and (max-width : 764px) {
+    .title {
+        width: 70%;
+    }
+    #home p {
+        width: 70%;
+    }
+    .story-section .story-title {
+        padding: 3rem 0;
+    }
+    .story-section .story-title p {
+        font-size: 1rem;
+        margin-bottom: 0;
+        padding-bottom: 5px;  
+    }
+}
+@media only screen and (max-width : 576px) {
+    .title {
+        font-size: 3rem;
+
+    }
+    #home p {
+        font-size: 1rem;
+
+    }
+    .nav-item {
+        padding: 0;
+    }
+    .my-nav .main-btn {
+        margin-left: 0;
+    }
+    .story-section .story-title h2 {
+        font-size: 1.25rem;
+    }
+    .story-title p {
+        font-size: 0.75rem;
+    }
+    .story-title h2 {
+        font-size: 2rem;
+    }
+    .faq-section .media-faq {
+        padding-left: 1rem;
+    }
+}
+ 
+
